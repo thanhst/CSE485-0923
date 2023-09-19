@@ -5,7 +5,7 @@ function convertToLowercase($arr) {
     $result = [];
     foreach ($arr as $item) {
       if (is_string($item)) {
-        $result[] = strtolower($item);
+        $result[] = strtoupper($item);
       } else {
         $result[] = $item;
       }
