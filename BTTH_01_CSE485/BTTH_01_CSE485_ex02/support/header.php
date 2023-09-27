@@ -4,10 +4,10 @@
                 <a href="#"><img src="../img/logo-removebg-preview.png" style="width:10em;height:6rem;"></a>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-black fw-bold" aria-current="page" href="../screen/index.php">Trang chủ</a>
+                        <a class="nav-link text-black <?php echo ($currentPage === 'index') ? 'active fw-bold' : ''; ?>" aria-current="page" href="../screen/index.php">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="../screen/login.php">Đăng nhập</a>
+                        <a class="nav-link text-black <?php echo ($currentPage === 'login') ? 'active fw-bold' : ''; ?>" href="../screen/login.php">Đăng nhập</a>
                     </li>
                 </ul>
             </div>

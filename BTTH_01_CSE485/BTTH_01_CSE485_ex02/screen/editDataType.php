@@ -1,4 +1,6 @@
 <?php 
+include("../progress/login/issetSession.php");
+include("../support/checkURL.php");
 include("../connect/connect.php");
 if(isset($_GET["id"])){
     $id = $_GET["id"];
@@ -19,12 +21,12 @@ include("../support/head.php");
         <div class="d-flex justify-content-center pb-3">
             <h1 class="fw-bold">SỬA THÔNG TIN THỂ LOẠI</h1>
         </div>
-        <form class="form-group w-100 d-flex flex-column gap-3" action="../progress/Type/addType.php" method="post">
+        <form class="form-group w-100 d-flex flex-column gap-3" action="../progress/Type/editType.php" method="post">
             <div class="input-group">
-                <div class="input-group-text">Mã thể loại</div><input type="text" value="<?= $result[0]?>" class="form-control" disabled>
+                <div class="input-group-text">Mã thể loại</div><input type="text" name="typeID" value="<?= $result[0]?>" class="form-control input-group-text text-start" style="pointer-events: none;" readonly>
             </div>
             <div class="input-group">
-                <div class="input-group-text">Tên thể loại</div><input type="text" value="<?= $result[1]?>" class="form-control">
+                <div class="input-group-text">Tên thể loại</div><input type="text" name="typeName" value="<?= $result[1]?>" class="form-control">
             </div>
             <div class="ms-auto">
                 <button type="submit" class="btn btn-success">Lưu lại</button>

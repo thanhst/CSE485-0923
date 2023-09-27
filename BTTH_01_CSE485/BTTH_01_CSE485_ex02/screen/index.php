@@ -1,4 +1,6 @@
 <?php 
+include("../progress/login/issetSession.php");
+include("../support/checkURL.php");
 include("../progress/getList.php");
 include("../support/head.php")?>
 <body>
@@ -55,5 +57,5 @@ include("../support/head.php")?>
 
 
 
-<!-- Câu hỏi số 1 : khi đăng ký mà yêu cầu kích hoạt qua email và số điện thoại , tại sao phải yêu cầu kích hoạt kiểu vậy ? -->
-<!-- Câu hỏi 2 : Nếu mà code nhiều người thì cách code hiện tại có vấn đề gì ? MVC ,hướng đối tượng -->
+<!-- Câu hỏi số 1 : khi đăng ký mà yêu cầu kích hoạt qua email và số điện thoại , tại sao phải yêu cầu kích hoạt kiểu vậy ? Định danh , xác định chủ của tài khoản là đúng người đăng ký -->
+<!-- Câu hỏi 2 : Nếu mà code nhiều người thì cách code hiện tại có vấn đề gì ? --Mỗi người code một kiểu khó mà xác định phần nào với phần nào , các file nào hoạt động với file nào .. MVC ,hướng đối tượng -->

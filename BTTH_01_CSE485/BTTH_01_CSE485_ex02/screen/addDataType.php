@@ -1,4 +1,6 @@
 <?php
+include("../progress/login/issetSession.php");
+include("../support/checkURL.php");
 include("../support/head.php");
 ?>
 

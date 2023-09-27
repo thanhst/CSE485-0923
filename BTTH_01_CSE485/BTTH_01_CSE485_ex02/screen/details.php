@@ -1,4 +1,5 @@
 <?php
+include("../support/checkURL.php");
 include("../progress/getDetails.php");
 include("../support/head.php") ?>
 
