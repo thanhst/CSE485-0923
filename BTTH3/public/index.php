@@ -21,12 +21,12 @@ if (isset($_GET["action"]) && isset($_GET["controller"])) {
             $controller->index();
         }
     } else {
-        require_once(APP_ROOT . "/app/controller/postController.php");
-        $postController = new PostController();
-        $postController->index();
+        require_once(APP_ROOT . "/app/controller/studentController.php");
+        $studentController = new StudentController();
+        $studentController->index();
     }
 } else {
-    require_once(APP_ROOT . "/app/controller/postController.php");
-    $postController = new PostController();
-    $postController->index();
+    require_once(APP_ROOT . "/app/controller/studentController.php");
+    $studentController = new StudentController();
+    $studentController->index();
 }

@@ -1,18 +1,23 @@
 <?php
- class Sinhvien{
+ class Student{
     private $id;
     private $name;
     private $email;
     private $birthday;
-	private $idLop;
-    public function __construct($id, $name, $email, $birthday,$idLop){
+	private $idClass;
+    public function __construct($id, $name, $email, $birthday,$idClass){
         $this->id = $id;
         $this->name = $name;
         $this->email = $email;
         $this->birthday = $birthday;
-		$this->idLop = $idLop;
+		$this->idClass = $idClass;
     }
  
+	/**
+	 * @return mixed
+	 */
+	
+
 	/**
 	 * @return mixed
 	 */
@@ -76,24 +81,20 @@
 		$this->birthday = $birthday;
 		return $this;
 	}
-
+	
 	/**
-	 * Get the value of idLop
-	 */ 
-	public function getIdLop()
-	{
-		return $this->idLop;
+	 * @return mixed
+	 */
+	public function getIdClass() {
+		return $this->idClass;
 	}
-
+	
 	/**
-	 * Set the value of idLop
-	 *
-	 * @return  self
-	 */ 
-	public function setIdLop($idLop)
-	{
-		$this->idLop = $idLop;
-
+	 * @param mixed $idClass 
+	 * @return self
+	 */
+	public function setIdClass($idClass): self {
+		$this->idClass = $idClass;
 		return $this;
 	}
 }

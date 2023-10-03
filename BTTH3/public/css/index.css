@@ -34,7 +34,7 @@ html,body{
     background-color: gray;
 }
 .form-group{
-    width:25rem;
+    width:40rem;
 }
 .icon-app{
     transform: translateX(-8rem) translateY(-2.2rem);

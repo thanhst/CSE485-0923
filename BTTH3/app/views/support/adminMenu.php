@@ -11,13 +11,10 @@
                         <a class="nav-link <?php echo ($currentPage === 'trangngoai') ? 'active fw-bold' : ''; ?>" id="trangngoai" href="../screen/trangngoai.php">Trang ngoài</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo ($currentPage === 'theloai') ? 'active fw-bold' : ''; ?>" id='theloai' href="<?=DOMAIN."/public/index.php?controller=category&action=index"?>">Thể loại</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?php echo ($currentPage === 'tacgia') ? 'active fw-bold' : ''; ?>" id="tacgia" href="../screen/tacgia.php">Tác giả</a>
+                        <a class="nav-link <?php echo ($currentPage === 'lop') ? 'active fw-bold' : ''; ?>" id='lop' href="<?=DOMAIN."/public/index.php?controller=class&action=index"?>">Lớp</a>
                     </li>
                     <li class="nav-item"></li>
-                    <a class="nav-link <?php echo ($currentPage === 'baiviet') ? 'active fw-bold' : ''; ?>" id="baiviet" href="<?=DOMAIN."/public/index.php?controller=post&action=index"?>">Bài hát</a>
+                    <a class="nav-link <?php echo ($currentPage === 'sinhvien') ? 'active fw-bold' : ''; ?>" id="sinhvien" href="<?=DOMAIN."/public/index.php?controller=student&action=index"?>">Sinh Viên</a>
                     </li>
                 </ul>
             </div>

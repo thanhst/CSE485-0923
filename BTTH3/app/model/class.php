@@ -1,5 +1,5 @@
 <?php
-class Lop{
+class Classs{
     private $id;
     private $name;
     public function __construct($id,$name){
