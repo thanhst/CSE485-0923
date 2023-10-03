@@ -1,6 +1,6 @@
 <?php
-require_once(APP_ROOT."/app/services/postService.php");
-class PostController{
+require_once(APP_ROOT."/app/services/studentService.php");
+class StudentController{
     public function index(){
         $postService=new PostService();
         $post=$postService->getAllPost();

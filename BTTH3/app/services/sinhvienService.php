@@ -1,20 +1,8 @@
 <?php
-require_once(APP_ROOT . "/app/model/post.php");
+require_once(APP_ROOT . "/app/model/sinhvien.php");
 require_once(APP_ROOT . "/app/lib/DBconnection.php");
-class PostService
-{
-    public function getCountPost()
-    {
-        $dbConnection = new DBconnection();
-        $conn = $dbConnection->getConnection();
-        if ($conn != null) {
-            $sql = "SELECT * FROM baihat";
-            $stmt = $conn->prepare($sql);
-            $stmt->execute();
-            return $stmt->rowCount();
-        }
-    }
-    public function addPost($name,$author,$idCategory)
+class SinhvienService{
+    public function addSinhvien($name,$author,$idCategory)
     {
         $dbConnection = new DBconnection();
         $conn = $dbConnection->getConnection();
@@ -35,23 +23,23 @@ class PostService
         }
         return false;
     }
-    public function getAllPost()
+    public function getAllSinhvien()
     {
 
         $dbConnection = new DBconnection();
         $conn = $dbConnection->getConnection();
         if ($conn != null) {
-            $sql = "SELECT * FROM baihat";
+            $sql = "SELECT * FROM sinhvien";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
-            $postArr = [];
+            $sinhvienArr = [];
             if ($stmt->rowCount() > 0) {
                 foreach ($stmt->fetchAll() as $row) {
-                    $post = new Post($row["id"], $row["tenbaihat"], $row["casi"], $row["idtheloai"]);
-                    $postArr[] = $post;
+                    $sinhvien = new Sinhvien($row["id"], $row["tenbaihat"], $row["casi"], $row["idtheloai"]);
+                    $sinhvienArr[] = $sinhvien;
                 }
             }
-            return $postArr;
+            return $sinhvienArr;
         }
     }
 }

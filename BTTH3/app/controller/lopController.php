@@ -1,10 +1,10 @@
 <?php
-require_once(APP_ROOT."/app/services/categoryService.php");
-class CategoryController{
+require_once(APP_ROOT."/app/services/classService.php");
+class ClassController{
     public function index(){
-        $cateService=new CategoryService();
-        $cate=$cateService->getAllCategory();
-        if($cate == []){
+        $classService=new ClassService();
+        $class=$classService->getAllCategory();
+        if($class == []){
             require_once(APP_ROOT."/app/views/Error/index.php");
         }
         else{
