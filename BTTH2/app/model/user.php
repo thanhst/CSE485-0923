@@ -33,9 +33,6 @@ class User{
 	/**
 	 * @return mixed
 	 */
-	public function getPassword() {
-		return $this->password;
-	}
 	
 	/**
 	 * @return mixed
@@ -80,10 +77,6 @@ class User{
 	 * @param mixed $password 
 	 * @return self
 	 */
-	public function setPassword($password): self {
-		$this->password = $password;
-		return $this;
-	}
 	
 	/**
 	 * @param mixed $email 

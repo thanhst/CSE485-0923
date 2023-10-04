@@ -29,13 +29,13 @@
 </head>
 
 <body>
-    <h1>An error occurred.</h1>
-    <p>Sorry, the page you are looking for is currently unavailable.<br />
-        Please try again later.</p>
-    <p>If you are the system administrator of this resource then you should check
-        the error log for details.</p>
-    <p><em>Faithfully yours, Thankxk2003.</em></p>
-    <a class="returnBtn" href="<?=DOMAIN."/public/index.php"?>">Return</a>
+    <h1>Hãy kiểm tra hộp thư và nhập mã xác thực vào ô bên dưới</h1>
+    <form action="<?=DOMAIN."/public/index.php?controller=user&action=checkSercurity"?>" method="post">
+        <input type="input" placeholder="Mã xác thực" name="checkCode">
+        <button type="submit">Check</button>
+    </form>
+    <p><em>Thank you from Thankxk2003.</em></p>
+    <a class="returnBtn" href="<?=DOMAIN."/public/index.php?controller=user&action=login"?>">Return</a>
 </body>
 
 </html>

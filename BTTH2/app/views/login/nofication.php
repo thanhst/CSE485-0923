@@ -29,13 +29,10 @@
 </head>
 
 <body>
-    <h1>An error occurred.</h1>
-    <p>Sorry, the page you are looking for is currently unavailable.<br />
-        Please try again later.</p>
-    <p>If you are the system administrator of this resource then you should check
-        the error log for details.</p>
-    <p><em>Faithfully yours, Thankxk2003.</em></p>
-    <a class="returnBtn" href="<?=DOMAIN."/public/index.php"?>">Return</a>
+    <h1>Thư đã được gửi tới email của bạn!</h1>
+    <?=$contentText?>
+    <p><em>Thank you from Thankxk2003.</em></p>
+    <a class="returnBtn" href="<?=DOMAIN."/public/index.php?controller=user&action=login"?>">Return</a>
 </body>
 
 </html>

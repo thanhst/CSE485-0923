@@ -7,7 +7,7 @@
                         <a class="nav-link text-black <?php echo ($currentPage === 'index') ? 'active fw-bold' : ''; ?>" aria-current="page" href="<?=DOMAIN.'/public/index.php'?>">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black <?php echo ($currentPage === 'login') ? 'active fw-bold' : ''; ?>" href="<?=DOMAIN.'/public/index.php?action=login'?>">Đăng nhập</a>
+                        <a class="nav-link text-black <?php echo ($currentPage === 'login') ? 'active fw-bold' : ''; ?>" href="<?=DOMAIN.'/public/index.php?action=login&controller=user'?>">Đăng nhập</a>
                     </li>
                 </ul>
             </div>

@@ -5,7 +5,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link <?php echo ($currentPage === 'trangchu') ? 'active fw-bold' : ''; ?>" id="trangchu" aria-current="page" href="../screen/trangchu.php">Trang chủ</a>
+                        <a class="nav-link <?php echo ($currentPage === 'trangchu') ? 'active fw-bold' : ''; ?>" id="trangchu" aria-current="page" href="<?=DOMAIN."/public/index.php?controller=synthetic&action=index"?>">Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php echo ($currentPage === 'trangngoai') ? 'active fw-bold' : ''; ?>" id="trangngoai" href="../screen/trangngoai.php">Trang ngoài</a>
